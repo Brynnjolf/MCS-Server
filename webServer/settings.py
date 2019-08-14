@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'webServer.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# TODO: Change database settings to more appropriate names 
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "root",
-        "USER": "root",
+        "NAME": "mcsadmin",
+        "USER": "mcsadmin",
         "PASSWORD": "mcs123",
         "HOST": "localhost",
         "PORT": "5432",

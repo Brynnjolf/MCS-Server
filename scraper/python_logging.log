@@ -1,7 +1,1 @@
-2019-08-13 01:48:31,985 - nzxscraper - <module> - INFO - Completed configuring logger()!
-2019-08-13 01:48:40,481 - nzxscraper - get_browser - INFO - Browser is ready!
-2019-08-13 01:48:40,482 - nzxscraper - get_browser - INFO - get_browser() complete
-2019-08-13 01:48:47,875 - nzxscraper - list_companies - INFO - Logged into NZX System
-2019-08-13 01:48:52,380 - nzxscraper - list_companies - INFO - Arrived at Market Activity Page
-2019-08-13 01:48:56,651 - nzxscraper - list_companies - INFO - Arrived at Market Overview Page
-2019-08-13 01:48:59,064 - nzxscraper - list_companies - INFO - Arrived at Market Overview sorted by marketcap in descending order
+2019-08-14 02:05:35,362 - nzxscraper - <module> - INFO - Completed configuring logger()!

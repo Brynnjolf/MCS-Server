@@ -38,4 +38,3 @@ def run_scraper_module():
         # logger.info("That took a total of: " + str(round(endTime-startTime)) + " seconds.")
         # logger.info(str(round((endTime-startTime)/COMPANIES)) + " seconds per company.")
 
-run_scraper_module()
