@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.summary {
+    padding: 3em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}

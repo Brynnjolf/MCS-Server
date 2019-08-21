@@ -1,1 +1,1000 @@
-2019-08-14 03:58:45,078 - nzxscraper - <module> - INFO - Completed configuring logger()!
+2019-08-21 00:03:24,054 - nzxscraper - <module> - INFO - Completed configuring logger()!
+2019-08-21 02:14:19,065 - django.request - log_response - ERROR - Internal Server Error: /App.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/App.php/?_=15626fb354ac6 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:14:19,586 - django.request - log_response - WARNING - Not Found: /webdav/
+2019-08-21 02:14:43,484 - django.request - log_response - WARNING - Not Found: /scripts/setup.php
+2019-08-21 02:14:46,678 - django.request - log_response - WARNING - Not Found: /phpMyAdmin/scripts/setup.php
+2019-08-21 02:14:47,177 - django.request - log_response - WARNING - Not Found: /scripts/db___.init.php
+2019-08-21 02:14:47,674 - django.request - log_response - WARNING - Not Found: /phpmyadmin/scripts/db___.init.php
+2019-08-21 02:14:50,519 - django.request - log_response - WARNING - Not Found: /phpMyAdmin/scripts/db___.init.php
+2019-08-21 02:14:51,013 - django.request - log_response - WARNING - Not Found: /pma/scripts/setup.php
+2019-08-21 02:14:51,504 - django.request - log_response - WARNING - Not Found: /PMA/scripts/setup.php
+2019-08-21 02:14:52,011 - django.request - log_response - WARNING - Not Found: /myadmin/scripts/setup.php
+2019-08-21 02:14:54,721 - django.request - log_response - WARNING - Not Found: /pma/scripts/db___.init.php
+2019-08-21 02:14:55,234 - django.request - log_response - WARNING - Not Found: /PMA/scripts/db___.init.php
+2019-08-21 02:14:55,750 - django.request - log_response - WARNING - Not Found: /myadmin/scripts/db___.init.php
+2019-08-21 02:14:56,235 - django.request - log_response - WARNING - Not Found: /MyAdmin/scripts/db___.init.php
+2019-08-21 02:14:56,717 - django.request - log_response - WARNING - Not Found: /plugins/weathermap/editor.php
+2019-08-21 02:14:57,219 - django.request - log_response - WARNING - Not Found: /cacti/plugins/weathermap/editor.php
+2019-08-21 02:14:57,724 - django.request - log_response - WARNING - Not Found: /weathermap/editor.php
+2019-08-21 02:16:14,468 - django.request - log_response - WARNING - Not Found: /images/!.php
+2019-08-21 02:16:14,964 - django.request - log_response - WARNING - Not Found: /images/vuln.php
+2019-08-21 02:16:15,732 - django.request - log_response - WARNING - Not Found: /images/up.php
+2019-08-21 02:16:18,748 - django.request - log_response - WARNING - Not Found: /images/attari.php
+2019-08-21 02:16:19,279 - django.request - log_response - WARNING - Not Found: /images/jsspwneed.php
+2019-08-21 02:16:19,788 - django.request - log_response - WARNING - Not Found: /images/stories/cmd.php
+2019-08-21 02:16:22,756 - django.request - log_response - WARNING - Not Found: /images/stories/filemga.php
+2019-08-21 02:16:43,330 - django.request - log_response - ERROR - Internal Server Error: /wuwu11.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/wuwu11.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:43,875 - django.request - log_response - ERROR - Internal Server Error: /xw.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/xw.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:46,707 - django.request - log_response - ERROR - Internal Server Error: /xw1.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/xw1.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:47,258 - django.request - log_response - ERROR - Internal Server Error: /9678.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/9678.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:47,794 - django.request - log_response - ERROR - Internal Server Error: /wc.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/wc.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:50,660 - django.request - log_response - ERROR - Internal Server Error: /xx.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/xx.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:51,196 - django.request - log_response - ERROR - Internal Server Error: /xx.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/xx.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:51,723 - django.request - log_response - ERROR - Internal Server Error: /s.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/s.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:54,563 - django.request - log_response - ERROR - Internal Server Error: /w.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/w.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:55,085 - django.request - log_response - ERROR - Internal Server Error: /sheep.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/sheep.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:55,610 - django.request - log_response - ERROR - Internal Server Error: /qaq.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/qaq.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:58,687 - django.request - log_response - ERROR - Internal Server Error: /qq.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/qq.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:59,230 - django.request - log_response - ERROR - Internal Server Error: /aaa.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/aaa.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:16:59,783 - django.request - log_response - ERROR - Internal Server Error: /hhh.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/hhh.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:02,564 - django.request - log_response - ERROR - Internal Server Error: /jjj.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/jjj.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:03,091 - django.request - log_response - ERROR - Internal Server Error: /vvv.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/vvv.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:03,620 - django.request - log_response - ERROR - Internal Server Error: /www.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/www.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:06,569 - django.request - log_response - ERROR - Internal Server Error: /411.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/411.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:07,117 - django.request - log_response - ERROR - Internal Server Error: /415.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/415.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:07,669 - django.request - log_response - ERROR - Internal Server Error: /421.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/421.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:10,612 - django.request - log_response - ERROR - Internal Server Error: /444.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/444.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:11,152 - django.request - log_response - ERROR - Internal Server Error: /a411.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/a411.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:11,673 - django.request - log_response - ERROR - Internal Server Error: /whoami.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/whoami.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:14,584 - django.request - log_response - ERROR - Internal Server Error: /whoami.php.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/whoami.php.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:15,110 - django.request - log_response - ERROR - Internal Server Error: /9.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/9.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:15,655 - django.request - log_response - ERROR - Internal Server Error: /98k.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/98k.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:18,564 - django.request - log_response - ERROR - Internal Server Error: /981.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/981.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:19,098 - django.request - log_response - ERROR - Internal Server Error: /887.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/887.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:19,643 - django.request - log_response - ERROR - Internal Server Error: /888.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/888.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:22,679 - django.request - log_response - ERROR - Internal Server Error: /bb.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/bb.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:23,198 - django.request - log_response - ERROR - Internal Server Error: /pp.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/pp.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:23,732 - django.request - log_response - ERROR - Internal Server Error: /tt.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/tt.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:26,595 - django.request - log_response - ERROR - Internal Server Error: /bbq.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/bbq.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:27,126 - django.request - log_response - ERROR - Internal Server Error: /jj1.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/jj1.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:27,651 - django.request - log_response - ERROR - Internal Server Error: /jbb.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/jbb.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:30,678 - django.request - log_response - ERROR - Internal Server Error: /qwq.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/qwq.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:31,210 - django.request - log_response - ERROR - Internal Server Error: /nb.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/nb.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:31,734 - django.request - log_response - ERROR - Internal Server Error: /kpl.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/kpl.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:34,634 - django.request - log_response - ERROR - Internal Server Error: /hgx.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/hgx.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:35,184 - django.request - log_response - ERROR - Internal Server Error: /ppl.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ppl.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:35,717 - django.request - log_response - ERROR - Internal Server Error: /tty.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/tty.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:38,550 - django.request - log_response - ERROR - Internal Server Error: /ooi.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ooi.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:39,088 - django.request - log_response - ERROR - Internal Server Error: /aap.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/aap.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:39,607 - django.request - log_response - ERROR - Internal Server Error: /app.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/app.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:42,712 - django.request - log_response - ERROR - Internal Server Error: /ioi.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ioi.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:43,270 - django.request - log_response - ERROR - Internal Server Error: /uuu.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/uuu.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:43,814 - django.request - log_response - ERROR - Internal Server Error: /yyy.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/yyy.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:46,653 - django.request - log_response - ERROR - Internal Server Error: /ack.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ack.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:47,197 - django.request - log_response - ERROR - Internal Server Error: /shh.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/shh.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:47,754 - django.request - log_response - ERROR - Internal Server Error: /ddd.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ddd.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:50,552 - django.request - log_response - ERROR - Internal Server Error: /nnn.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/nnn.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:51,085 - django.request - log_response - ERROR - Internal Server Error: /rrr.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/rrr.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:51,609 - django.request - log_response - ERROR - Internal Server Error: /ttt.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ttt.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:54,566 - django.request - log_response - ERROR - Internal Server Error: /tyrant.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/tyrant.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:55,101 - django.request - log_response - ERROR - Internal Server Error: /qiqi.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/qiqi.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:55,639 - django.request - log_response - ERROR - Internal Server Error: /qiqi1.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/qiqi1.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:58,550 - django.request - log_response - ERROR - Internal Server Error: /bbv.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/bbv.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:59,067 - django.request - log_response - ERROR - Internal Server Error: /605.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/605.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:17:59,576 - django.request - log_response - ERROR - Internal Server Error: /admin1.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/admin1.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:02,687 - django.request - log_response - ERROR - Internal Server Error: /999.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/999.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:03,221 - django.request - log_response - ERROR - Internal Server Error: /jsc.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/jsc.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:03,741 - django.request - log_response - ERROR - Internal Server Error: /jsc.php.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/jsc.php.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:06,605 - django.request - log_response - ERROR - Internal Server Error: /jsc.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/jsc.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:07,152 - django.request - log_response - ERROR - Internal Server Error: /11a.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/11a.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:07,737 - django.request - log_response - ERROR - Internal Server Error: /kkl.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/kkl.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:10,613 - django.request - log_response - ERROR - Internal Server Error: /ks1.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ks1.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:11,161 - django.request - log_response - ERROR - Internal Server Error: /ooo.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ooo.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:11,719 - django.request - log_response - ERROR - Internal Server Error: /wsx.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/wsx.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:14,578 - django.request - log_response - ERROR - Internal Server Error: /lz.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/lz.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:15,112 - django.request - log_response - ERROR - Internal Server Error: /zmp.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/zmp.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:15,638 - django.request - log_response - ERROR - Internal Server Error: /803.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/803.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:18,557 - django.request - log_response - ERROR - Internal Server Error: /ze.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/ze.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:19,099 - django.request - log_response - ERROR - Internal Server Error: /nnb.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/nnb.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:19,641 - django.request - log_response - ERROR - Internal Server Error: /lkio.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/lkio.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:22,526 - django.request - log_response - WARNING - Not Found: /seeyon/htmlofficeservlet
+2019-08-21 02:18:23,034 - django.request - log_response - WARNING - Not Found: /secure/ContactAdministrators!default.jspa
+2019-08-21 02:18:23,571 - django.request - log_response - ERROR - Internal Server Error: /index.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/index.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:26,608 - django.request - log_response - WARNING - Not Found: /user/register
+2019-08-21 02:18:27,885 - django.request - log_response - ERROR - Internal Server Error: /user.php
+Traceback (most recent call last):
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mcsadmin/webServer/venv/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 198.74.53.251/user.php/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2019-08-21 02:18:30,893 - django.request - log_response - WARNING - Not Found: /phpmyadmin/index.php
+2019-08-21 02:18:31,378 - django.request - log_response - WARNING - Not Found: /phpMyAdmin/index.php
+2019-08-21 02:18:31,872 - django.request - log_response - WARNING - Not Found: /pmd/index.php
+2019-08-21 02:18:32,369 - django.request - log_response - WARNING - Not Found: /pma/index.php
+2019-08-21 02:18:34,661 - django.request - log_response - WARNING - Not Found: /PMA/index.php
+2019-08-21 02:18:35,165 - django.request - log_response - WARNING - Not Found: /PMA2/index.php
+2019-08-21 02:18:35,669 - django.request - log_response - WARNING - Not Found: /pmamy/index.php
+2019-08-21 02:18:36,168 - django.request - log_response - WARNING - Not Found: /pmamy2/index.php
+2019-08-21 02:18:36,668 - django.request - log_response - WARNING - Not Found: /mysql/index.php
+2019-08-21 02:18:37,179 - django.request - log_response - WARNING - Not Found: /admin/index.php
+2019-08-21 02:18:37,676 - django.request - log_response - WARNING - Not Found: /db/index.php
+2019-08-21 02:18:38,182 - django.request - log_response - WARNING - Not Found: /dbadmin/index.php
+2019-08-21 02:19:06,581 - django.request - log_response - WARNING - Not Found: /admin/mysql/index.php
+2019-08-21 02:19:07,077 - django.request - log_response - WARNING - Not Found: /admin/mysql2/index.php
+2019-08-21 02:19:07,569 - django.request - log_response - WARNING - Not Found: /admin/phpmyadmin/index.php
+2019-08-21 02:19:10,649 - django.request - log_response - WARNING - Not Found: /admin/phpmyadmin2/index.php
+2019-08-21 02:19:11,151 - django.request - log_response - WARNING - Not Found: /mysqladmin/index.php
+2019-08-21 02:19:11,663 - django.request - log_response - WARNING - Not Found: /mysql-admin/index.php
+2019-08-21 02:19:14,646 - django.request - log_response - WARNING - Not Found: /mysql_admin/index.php
+2019-08-21 02:19:15,124 - django.request - log_response - WARNING - Not Found: /phpadmin/index.php
+2019-08-21 02:19:15,632 - django.request - log_response - WARNING - Not Found: /phpAdmin/index.php
+2019-08-21 02:19:18,527 - django.request - log_response - WARNING - Not Found: /phpmyadmin1/index.php
+2019-08-21 02:19:19,041 - django.request - log_response - WARNING - Not Found: /phpmyadmin2/index.php
+2019-08-21 02:19:19,536 - django.request - log_response - WARNING - Not Found: /phpMyAdmin-4.4.0/index.php
+2019-08-21 02:19:22,688 - django.request - log_response - WARNING - Not Found: /myadmin2/index.php
+2019-08-21 02:19:23,200 - django.request - log_response - WARNING - Not Found: /xampp/phpmyadmin/index.php
+2019-08-21 02:19:23,707 - django.request - log_response - WARNING - Not Found: /phpMyadmin_bak/index.php
+2019-08-21 02:19:26,701 - django.request - log_response - WARNING - Not Found: /www/phpMyAdmin/index.php
+2019-08-21 02:19:27,239 - django.request - log_response - WARNING - Not Found: /tools/phpMyAdmin/index.php
+2019-08-21 02:19:27,753 - django.request - log_response - WARNING - Not Found: /phpmyadmin-old/index.php
+2019-08-21 02:19:30,524 - django.request - log_response - WARNING - Not Found: /phpMyAdminold/index.php
+2019-08-21 02:19:31,048 - django.request - log_response - WARNING - Not Found: /phpMyAdmin.old/index.php
+2019-08-21 02:19:31,570 - django.request - log_response - WARNING - Not Found: /pma-old/index.php
+2019-08-21 02:19:34,524 - django.request - log_response - WARNING - Not Found: /typo3/phpmyadmin/index.php
+2019-08-21 02:19:35,027 - django.request - log_response - WARNING - Not Found: /phpma/index.php
+2019-08-21 02:19:35,538 - django.request - log_response - WARNING - Not Found: /phpmyadmin/phpmyadmin/index.php
+2019-08-21 02:19:38,684 - django.request - log_response - WARNING - Not Found: /phpMyAbmin/index.php
+2019-08-21 02:19:39,198 - django.request - log_response - WARNING - Not Found: /phpMyAdmin__/index.php
+2019-08-21 02:19:39,719 - django.request - log_response - WARNING - Not Found: /phpMyAdmin+++---/index.php
+2019-08-21 02:19:42,690 - django.request - log_response - WARNING - Not Found: /v/index.php
+2019-08-21 02:19:43,198 - django.request - log_response - WARNING - Not Found: /phpmyadm1n/index.php
+2019-08-21 02:19:43,726 - django.request - log_response - WARNING - Not Found: /phpMyAdm1n/index.php
+2019-08-21 02:19:46,678 - django.request - log_response - WARNING - Not Found: /shaAdmin/index.php
+2019-08-21 02:19:47,164 - django.request - log_response - WARNING - Not Found: /phpMyadmi/index.php
+2019-08-21 02:19:47,683 - django.request - log_response - WARNING - Not Found: /phpMyAdmion/index.php
+2019-08-21 02:19:50,685 - django.request - log_response - WARNING - Not Found: /s/index.php
+2019-08-21 02:19:51,190 - django.request - log_response - WARNING - Not Found: /MyAdmin/index.php
+2019-08-21 02:19:51,703 - django.request - log_response - WARNING - Not Found: /phpMyAdmin1/index.php
+2019-08-21 02:19:54,727 - django.request - log_response - WARNING - Not Found: /phpMyAdmin123/index.php
+2019-08-21 02:19:55,272 - django.request - log_response - WARNING - Not Found: /pwd/index.php
+2019-08-21 02:19:55,780 - django.request - log_response - WARNING - Not Found: /phpMyAdmina/index.php
+2019-08-21 02:19:58,580 - django.request - log_response - WARNING - Not Found: /phpMydmin/index.php
+2019-08-21 02:19:59,093 - django.request - log_response - WARNING - Not Found: /phpMyAdmins/index.php
+2019-08-21 02:19:59,612 - django.request - log_response - WARNING - Not Found: /phpMyAdmin._/index.php
+2019-08-21 02:20:02,656 - django.request - log_response - WARNING - Not Found: /phpmyadmin2222/index.php
+2019-08-21 02:20:03,167 - django.request - log_response - WARNING - Not Found: /phpmyadmin3333/index.php
+2019-08-21 02:20:03,673 - django.request - log_response - WARNING - Not Found: /php2MyAdmin/index.php
+2019-08-21 02:20:06,700 - django.request - log_response - WARNING - Not Found: /phpiMyAdmin/index.php
+2019-08-21 02:20:07,218 - django.request - log_response - WARNING - Not Found: /phpNyAdmin/index.php
+2019-08-21 02:20:07,734 - django.request - log_response - WARNING - Not Found: /1/index.php
+2019-08-21 02:20:10,697 - django.request - log_response - WARNING - Not Found: /download/index.php
+2019-08-21 02:20:11,210 - django.request - log_response - WARNING - Not Found: /phpMyAdmin_111/index.php
+2019-08-21 02:20:11,723 - django.request - log_response - WARNING - Not Found: /phpmadmin/index.php
+2019-08-21 02:20:14,673 - django.request - log_response - WARNING - Not Found: /321/index.php
+2019-08-21 02:20:15,175 - django.request - log_response - WARNING - Not Found: /123131/index.php
+2019-08-21 02:20:15,696 - django.request - log_response - WARNING - Not Found: /phpMyAdminn/index.php
+2019-08-21 02:20:18,737 - django.request - log_response - WARNING - Not Found: /phpMyAdminhf/index.php
+2019-08-21 02:20:19,223 - django.request - log_response - WARNING - Not Found: /sbb/index.php
+2019-08-21 02:20:19,744 - django.request - log_response - WARNING - Not Found: /WWW/phpMyAdmin/index.php
+2019-08-21 02:20:22,724 - django.request - log_response - WARNING - Not Found: /phpMyAdmln/index.php
+2019-08-21 02:20:23,237 - django.request - log_response - WARNING - Not Found: /program/index.php
+2019-08-21 02:20:23,737 - django.request - log_response - WARNING - Not Found: /shopdb/index.php
+2019-08-21 02:20:26,679 - django.request - log_response - WARNING - Not Found: /phppma/index.php
+2019-08-21 02:20:27,180 - django.request - log_response - WARNING - Not Found: /phpmy/index.php
+2019-08-21 02:20:27,684 - django.request - log_response - WARNING - Not Found: /mysql/admin/index.php
+2019-08-21 02:20:30,682 - django.request - log_response - WARNING - Not Found: /mysql/dbadmin/index.php
+2019-08-21 02:20:31,191 - django.request - log_response - WARNING - Not Found: /mysql/sqlmanager/index.php
+2019-08-21 02:20:31,699 - django.request - log_response - WARNING - Not Found: /mysql/mysqlmanager/index.php
+2019-08-21 02:20:34,520 - django.request - log_response - WARNING - Not Found: /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php
+2019-08-21 02:20:34,996 - django.request - log_response - WARNING - Not Found: /manager/html
+2019-08-21 03:08:58,400 - django.request - log_response - WARNING - Not Found: /phpmyadmin/
+2019-08-21 04:50:08,276 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 04:50:08,317 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 04:50:11,148 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 04:50:11,187 - django.request - log_response - WARNING - Bad Request: /favicon.ico
+2019-08-21 04:57:06,813 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 04:57:06,853 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 09:31:33,738 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'localhost'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2019-08-21 09:31:33,777 - django.request - log_response - WARNING - Bad Request: /robots.txt
+2019-08-21 10:32:26,775 - django.request - log_response - WARNING - Not Found: /manager/html
+2019-08-21 10:56:39,604 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 10:56:39,651 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 10:56:40,340 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 10:56:40,384 - django.request - log_response - WARNING - Bad Request: /favicon.ico
+2019-08-21 11:12:52,835 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 11:12:52,875 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 11:12:53,536 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 11:12:53,577 - django.request - log_response - WARNING - Bad Request: /favicon.ico
+2019-08-21 11:15:12,531 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 11:15:12,571 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 11:15:32,217 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 11:15:32,256 - django.request - log_response - WARNING - Bad Request: /favicon.ico
+2019-08-21 12:39:31,852 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 12:39:31,900 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 12:39:33,032 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 12:39:33,074 - django.request - log_response - WARNING - Bad Request: /favicon.ico
+2019-08-21 12:51:30,439 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 12:51:30,480 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 12:51:31,714 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 12:51:31,753 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 14:09:51,310 - django.request - log_response - WARNING - Not Found: /cm/
+2019-08-21 14:33:06,022 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 14:33:06,061 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 14:36:06,040 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 14:36:06,082 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 14:36:07,504 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 14:36:07,544 - django.request - log_response - WARNING - Bad Request: /favicon.ico
+2019-08-21 15:51:47,615 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 15:51:47,655 - django.request - log_response - WARNING - Bad Request: /
+2019-08-21 15:51:49,108 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 15:51:49,148 - django.request - log_response - WARNING - Bad Request: /favicon.ico
+2019-08-21 15:56:18,847 - django.request - log_response - WARNING - Not Found: /manager/html
+2019-08-21 21:12:37,640 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 21:12:37,680 - django.request - log_response - WARNING - Bad Request: /robots.txt
+2019-08-21 21:12:38,341 - django.security.DisallowedHost - response_for_exception - ERROR - Invalid HTTP_HOST header: 'rtools.vn'. You may need to add 'rtools.vn' to ALLOWED_HOSTS.
+2019-08-21 21:12:38,382 - django.request - log_response - WARNING - Bad Request: /

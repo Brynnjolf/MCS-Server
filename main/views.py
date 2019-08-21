@@ -1,9 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.template import loader
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from subprocess import Popen, PIPE, STDOUT
 import json
 from scraper import run_scraper_module
+from .models import *
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 # Landing Page
@@ -15,26 +17,14 @@ def searchTable(request):
     return HttpResponse('The search table Page')
 
 # Company summary page
-def summary(request, company_id):
-    return HttpResponse(f'Summary page for company {company_id}')
+def summary(request, ticker):
+    company = get_object_or_404(Company, ticker=ticker.upper())
+    return render(request, 'main/summary.html', {'company': company})
 
-# Run scraper
-# def run_scraper(request):
-#     # command = ['python3', '/home/mcsadmin/webServer/scraper/app.py']
-#     # try: 
-#     #     process = Popen(command, stdout=PIPE, stderr=STDOUT)
-#     #     output = process.stdout.read()
-#     #     exitStatus = process.poll()
-#     #     response = {'output':str(output)}
-#     #     if exitStatus is 0:
-#     #         response['status'] = 'Success'
-#     #     else:
-#     #         response['status'] = 'Failed'
-#     # except Exception as e:
-#     #     response = {"status": "failed", "output":str(e)}
-    
-#     # responseBack = HttpResponse(json.dumps(response), content_type='application/json', status=200)
-#     # return responseBack
-#     response = {'status':'Success'}
-#     return (HttpResponse(json.dumps(response), content_type='application/json', status=200))
-#     # run_scraper_module()
+#confirmation of Scraping
+@csrf_exempt #! This is NOT GOOD LONG TERM, WE NEED CSRF SECURITY!!!!!
+def update(request):
+    if request.method == 'GET':
+        return HttpResponse('WRONG TYPE BUCKO, AINT NO GETS AROUND THIS PART OF TOWN')
+    if request.method == 'POST':
+        return render(request, 'main/updated.html',{'request': request})
