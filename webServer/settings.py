@@ -12,8 +12,13 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import json
+import platform
 
-with open('/etc/config.json') as config_file:
+if platform.system() == "Darwin":
+    config_path = '/Users/Brynn/Desktop/mcsServer/webServer/config.json'
+else:
+    config_path = '/etc/config.json'
+with open(config_path) as config_file:
     config = json.load(config_file)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -29,7 +34,7 @@ SECRET_KEY = config['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['li555-251.members.linode.com','198.74.53.251']
+ALLOWED_HOSTS = ['li555-251.members.linode.com','198.74.53.251', 'localhost']
 
 
 # Application definition
@@ -82,9 +87,9 @@ WSGI_APPLICATION = 'webServer.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "mcsadmin",
-        "USER": "mcsadmin",
-        "PASSWORD": "mcs123",
+        "NAME": config["DB_NAME"],
+        "USER": config["DB_NAME"],
+        "PASSWORD": config["DB_PASS"],
         "HOST": "localhost",
         "PORT": "5432",
     }
@@ -127,7 +132,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = ( #! don't push
+    os.path.join(BASE_DIR, 'static'),
+)
 STATIC_URL = '/static/'
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 52428800

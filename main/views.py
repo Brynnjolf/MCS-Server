@@ -3,7 +3,6 @@ from django.template import loader
 from django.http import HttpResponse, Http404
 from subprocess import Popen, PIPE, STDOUT
 import json
-from scraper import run_scraper_module
 from .models import *
 from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
@@ -18,8 +17,15 @@ def searchTable(request):
 
 # Company summary page
 def summary(request, ticker):
-    company = get_object_or_404(Company, ticker=ticker.upper())
-    return render(request, 'main/summary.html', {'company': company})
+    company = get_object_or_404(Company, ticker=ticker) 
+    price = get_object_or_404(Price, ticker=ticker)
+    directors = get_object_or_404(Directors, ticker=ticker) 
+    #bokeh(import data)
+    #create graph
+    #get html
+    #get js
+
+    return render(request, 'main/summary.html', {'company': company, 'price': price, 'directors':directors})
 
 #confirmation of Scraping
 @csrf_exempt #! This is NOT GOOD LONG TERM, WE NEED CSRF SECURITY!!!!!
