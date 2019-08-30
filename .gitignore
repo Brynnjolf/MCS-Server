@@ -1,2 +1,3 @@
 venv
 webServer/config.json
+.vscode/
