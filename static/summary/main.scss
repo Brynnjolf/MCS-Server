@@ -1,16 +1,30 @@
+// Dimemsions
+// sm > 576, md > 768, lg > 992, xl > 1200
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-h1 {
-    text-align: center;
+// HEADER / NAV SECTION
+header {
+    .row {
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+    }
 }
 
-.summary {
-    padding: 3em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+// Title/Recommendation Section
+.recommendation {
+    padding: 2em 0 0;
+    h1 {
+        text-align: center;
+        padding: 0.4em;
+    }
 }

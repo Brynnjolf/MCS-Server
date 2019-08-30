@@ -67,7 +67,7 @@ class Price(models.Model):
 class CompanyProfile(models.Model):
     date = models.DateTimeField('Date Scraped', primary_key=True)
     ticker = models.ForeignKey(Company, on_delete=models.CASCADE, db_column="ticker")
-    overviews = models.TextField()
+    overview = models.TextField()
     performance = models.TextField()
     outlook = models.TextField()
     description = models.TextField()
@@ -116,3 +116,8 @@ class Assets(models.Model):
     current_assets = models.FloatField()
     NC_assets = models.FloatField()
     total_assets = models.FloatField()
+
+class Score(models.Model):
+    date = models.DateTimeField('Date Scraped', primary_key=True)
+    ticker = models.ForeignKey(Company, on_delete=models.CASCADE, db_column="ticker")
+    score = models.FloatField()

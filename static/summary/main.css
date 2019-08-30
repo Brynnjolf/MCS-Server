@@ -3,13 +3,18 @@
   padding: 0;
   list-style: none; }
 
-h1 {
-  text-align: center; }
-
-.summary {
-  padding: 3em;
+header .row {
+  align-items: center;
+  justify-content: space-around; }
+header nav {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly; }
+  justify-content: space-between;
+  width: 10%; }
+
+.recommendation {
+  padding: 2em 0 0; }
+  .recommendation h1 {
+    text-align: center;
+    padding: 0.4em; }
 
 /*# sourceMappingURL=main.css.map */

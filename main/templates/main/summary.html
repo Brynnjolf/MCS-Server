@@ -4,24 +4,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'summary/main.css'%}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'summary/main.css'%}">
     <title>Company Summary</title>
 </head>
 <body>
-    <!-- overview -->
-    <section class="overview">
-        <div class="data container-fluid">
-            <h2>Overview</h2>
-            <h3>Recommendation: TODO</h3>
-            <h3>Stock Price: {{price.price}}</h3>
-        </div>
-        <div class="sparkline container">
-
+   <!-- Header -->
+   <header class="header container-fluid">
+       <div class="row container-fluid">
+            <h1>Investment Analysis System</h1>
+            <nav>
+                <!-- Dropdown menu -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="/" class="dropdown-item">Home</a>
+                        <a href="#" class="dropdown-item">Ratio Analysis</a>
+                        <a href="#" class="dropdown-item">Key Graphs</a>
+                    </div>
+                </div>
+            </nav>
+       </div>
+   </header>
+    <!--Title/Recommendation Section  -->
+    <section class="recommendation">
+        <div class="container">
+            <h1>{{ company.name }} ({{company.ticker}})</h1>
         </div>
     </section>
+<<<<<<< Updated upstream
 
-    
+    <!-- Company Sumary -->
+    <section class="company-profile container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <h1>Overview</h1>
+                <p>{{ profile.overview }}</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <h1>Performance</h1>
+                <p>{{profile.performance}}</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <h1>Outlook</h1>
+                <p>{{profile.performance}}</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <h1>Description</h1>
+                <p>{{profile.performance}}</p>
+            </div>
+        </div>
+=======
+
+    <!-- Company Sumary -->
+    <section class="company-summary container-fluid">
+
+>>>>>>> Stashed changes
+    </section>
+
+
+
+
+
     <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

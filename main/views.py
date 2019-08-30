@@ -20,12 +20,19 @@ def summary(request, ticker):
     company = get_object_or_404(Company, ticker=ticker) 
     price = get_object_or_404(Price, ticker=ticker)
     directors = get_object_or_404(Directors, ticker=ticker) 
+<<<<<<< Updated upstream
+    profile = get_object_or_404(CompanyProfile, ticker=ticker)
     #bokeh(import data)
     #create graph
     #get html
     #get js
 
-    return render(request, 'main/summary.html', {'company': company, 'price': price, 'directors':directors})
+    return render(request, 'main/summary.html', {'company': company, 'price': price, 'directors':directors, 'profile': profile})
+=======
+    score = get_object_or_404(Score, ticker=ticker)
+    profile = get_object_or_404(CompanyProfile, ticker=ticker)
+    return render(request, 'main/summary.html', {'company': company, 'price': price, 'directors':directors, 'score': score})
+>>>>>>> Stashed changes
 
 #confirmation of Scraping
 @csrf_exempt #! This is NOT GOOD LONG TERM, WE NEED CSRF SECURITY!!!!!
