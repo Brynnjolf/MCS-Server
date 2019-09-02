@@ -3,21 +3,46 @@
   padding: 0;
   list-style: none; }
 
-header .row {
-  align-items: center;
-  justify-content: space-around; }
-header nav {
-  display: flex;
-  justify-content: space-between;
-  width: 10%; }
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.283);
+  padding: 0.5em; }
+  header h1 {
+    font-size: 1.8rem; }
+  header .row {
+    align-items: center;
+    justify-content: space-evenly; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 10%; }
 
-.recommendation {
-  padding: 2em 0 0; }
-  .recommendation h1 {
+.title {
+  padding: 1em;
+  text-align: center; }
+
+.price-graph {
+  padding: 4rem;
+  margin: 2em;
+  border: 1px solid rgba(0, 0, 0, 0.283); }
+  .price-graph h1 {
+    font-size: 1rem;
     text-align: center;
-    padding: 0.4em; }
+    transform-origin: center;
+    transform: rotate(-30deg);
+    color: rgba(0, 0, 0, 0.413); }
 
-.company-profile .profile p {
-  font-size: 1.2em; }
+.ratios {
+  padding-bottom: 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.283);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.283); }
+  .ratios h1 {
+    padding: 1rem; }
+
+.company-profile {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.283); }
+  .company-profile .row {
+    flex-flow: column; }
 
 /*# sourceMappingURL=main.css.map */

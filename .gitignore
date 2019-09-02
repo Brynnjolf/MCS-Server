@@ -1,4 +1,7 @@
 webServer/config.json
+# local bash commands
+setup
+start
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -19,6 +19,7 @@ def searchTable(request):
 def summary(request, ticker):
     company = get_object_or_404(Company, ticker=ticker) 
     price = company.price_set.latest('date')
+    ratios = company.ratios_set.latest('date')
     directors = company.directors_set.all()
     profile = company.companyprofile_set.latest('date')
     #bokeh(import data)
@@ -26,7 +27,7 @@ def summary(request, ticker):
     #get html
     #get js
 
-    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors})
+    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios})
 
 #confirmation of Scraping
 @csrf_exempt #! This is NOT GOOD LONG TERM, WE NEED CSRF SECURITY!!!!!

@@ -28,45 +28,89 @@
             </nav>
        </div>
    </header>
+   
     <!--Title/Recommendation Section  -->
-    <section class="recommendation">
-        <div class="container">
-            <h1>{{ company.name }} ({{company.ticker}})</h1>
-        </div>
+    <section class="title">
+        <h1>{{company.ticker.upper}}: {{company.name}} </h1>
     </section>
 
     <!-- Price Graph -->
     <section class="price-graph">
-        <div style="height: 250px; background-color: rgba(0, 255, 255, 0.249);"></div>
+        <h1>PRICE GRAPH GOES HERE</h1>
     </section>
 
-
-    <!-- Company Profile -->
-    <section class="company-profile container-fluid">
+    <!-- key ratios section -->
+    <section class="ratios container-fluid">
+        <h1 style="text-align: center">Key Ratios</h1>
         <div class="row">
-            <div class="profile col-sm-12 col-md-6 col-xl-3">
-                <h2>Overview</h2>
-                <p>{{profile.overview}}</p>
-            </div>
-            <div class="profile col-sm-12 col-md-6 col-xl-3">
-                <h2>Performance</h2>
-                <p>{{profile.performance}}</p>
-            </div>
-            <div class="profile col-sm-12 col-md-6 col-xl-3">
-                <h2>Outlook</h2>
-                <p>{{profile.outlook}}</p>
-            </div>
-            <div class="profile col-sm-12 col-md-6 col-xl-3">
-                <h2>Description</h2>
-                <p>{{profile.description}}</p>
-            </div>
+            <p class="col"><strong>Market Cap:</strong> {{ratios.market_cap}}</p>
+            <p class="col"><strong>Price Equity: </strong> {{ratios.price_equity}}</p>
+        </div>
+        <div class="row">
+            <p class="col"><strong>EPS: </strong> {{ratios.EPS}}</p>
+            <p class="col"><strong>NTA: </strong> {{ratios.NTA}}</p>
+        </div>
+        <div class="row">
+            <p class="col"><strong>DPS: </strong> {{ratios.DPS}}</p>
+            <p class="col"><strong>Beta: </strong> {{ratios.beta_value}}</p>
+        </div>
+        <div class="row">
+            <p class="col"><strong>Price NTA: </strong> {{ratios.price_NTA}}</p>
+            <p class="col"><strong>Net Yield: </strong> {{ratios.Net_yield}}</p>
+        </div>
+        <div class="row">
+            <p class="col"><strong>Sharpe: </strong> {{ratios.Sharpe}}</p>
+            <p class="col"><strong>Debt Equity: </strong> {{ratios.debt_equity}}</p>
+        </div>
+        <div class="row">
+            <p class="col"><strong>Current: </strong> {{ratios.current}}</p>
+            <p class="col"><strong>ROE: </strong> {{ratios.ROE}}</p>
+        </div>
+        <div class="row">
+            <p class="col"><strong>ROA: </strong> {{ratios.ROA}}</p>
+            <p class="col"><strong>Quicke Ratio: </strong> {{ratios.quick_ratio}}</p>
         </div>
     </section>
+
+    <!-- *Company Profile -->
+    <section class="company-profile container-fluid">
+        <h1 style="text-align: center">Company Profile</h1>
+        <div class="row">
+                <h2>Overview</h2>
+                <p>{{profile.overview}}</p>
+        </div>
+        <div class="row">
+                <h2>performance</h2>
+                <p>{{profile.performance}}</p>
+        </div>
+        <div class="row">
+                <h2>Outlook</h2>
+                <p>{{profile.outlook}}</p>
+        </div>
+        <div class="row">
+                <h2>Description</h2>
+                <p>{{profile.description}}</p>
+        </div>
+        
+    </section>
+
+    <!-- TODO: Income statement Section -->
+    <section class="income container-fluid">
+        <div class="row">
+
+        </div>
+    </section>
+
+    <!-- TODO: Assets & Liabilities Section -->
+
     <!-- Directors section -->
     <section class="directors container">
         <h1 style="text-align: center">Directors</h1>
+        <!-- Loop through directors queryse. Create a row and two columns for each director to ensure structure is tidy -->
         {%for d in directors%}
+        <!-- Set name and role labels during the first loop iteration -->
         {%if forloop.first%}
+        <!-- Column labels  -->
         <div class="row">
             <div class="col">
                 <h3>Name</h3>
@@ -76,6 +120,7 @@
             </div>
         </div>
         {% endif %}
+        <!-- Create a row and two cols -->
         <div class="row">
             <div class="col">
                 <p>{{d.director_name}}</p>
@@ -87,6 +132,7 @@
         </div>
         {%endfor%}
     </section>
+
 
 
 

@@ -1,6 +1,5 @@
-// Dimemsions
-// sm > 576, md > 768, lg > 992, xl > 1200
-
+// @import 'medias';
+$line-color: rgba(0, 0, 0, 0.283);
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +8,14 @@
 
 // HEADER / NAV SECTION
 header {
+    border-bottom: 1px solid $line-color;
+    padding: 0.5em;
+    h1 {
+        font-size: 1.8rem;
+    }
     .row {
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     nav {
         display: flex;
@@ -21,19 +25,44 @@ header {
 }
 
 // Title/Recommendation Section
-.recommendation {
-    padding: 2em 0 0;
+.title {
+    padding: 1em;
+    text-align: center;
+}
+
+// Price graph placeholder
+.price-graph {
+    padding: 4rem;
+    margin: 2em;
+    border: 1px solid $line-color;
     h1 {
+        font-size: 1rem;
         text-align: center;
-        padding: 0.4em;
+        transform-origin: center;
+        transform: rotate(-30deg);
+        color: rgba(0, 0, 0, 0.413);
     }
 }
 
-// Company Profile
-.company-profile {
-    .profile {
-        p {
-            font-size: 1.2em
-        }
+// Ratios Section
+.ratios {
+    padding-bottom: 1em;
+    border-top: 1px solid $line-color;
+    border-bottom: 1px solid $line-color;
+    h1 {
+        padding: 1rem;
     }
 }
+
+
+
+// Company Profile
+.company-profile {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $line-color;
+    .row {
+        flex-flow: column;
+    }
+}
+
