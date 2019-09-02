@@ -10,8 +10,8 @@ class Company(models.Model):
 class Directors(models.Model):
     date = models.DateTimeField('Date Scraped', primary_key=True)
     ticker = models.ForeignKey(Company, on_delete=models.CASCADE, db_column="ticker")
-    director_name = models.CharField(max_length=30)
-    director_role = models.CharField(max_length=30)
+    director_name = models.CharField(max_length=100)
+    director_role = models.CharField(max_length=100)
 
 class Dividends(models.Model):
     date = models.DateTimeField('Date Scraped', primary_key=True)
@@ -67,7 +67,7 @@ class Price(models.Model):
 class CompanyProfile(models.Model):
     date = models.DateTimeField('Date Scraped', primary_key=True)
     ticker = models.ForeignKey(Company, on_delete=models.CASCADE, db_column="ticker")
-    overviews = models.TextField()
+    overview = models.TextField()
     performance = models.TextField()
     outlook = models.TextField()
     description = models.TextField()
