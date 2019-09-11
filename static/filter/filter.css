@@ -1,0 +1,15 @@
+main {
+  margin-top: 56px; }
+  main .form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px; }
+    main .form > * {
+      margin: 5px; }
+    main .form input {
+      width: 20em;
+      padding: 3px; }
+
+/*# sourceMappingURL=filter.css.map */

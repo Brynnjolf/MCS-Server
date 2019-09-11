@@ -4,75 +4,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet"> <!--MontSerrat-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'summary/main.css'%}">
     <title>Company Summary</title>
 </head>
 <body>
-   <!-- Header -->
-   <header class="header container-fluid">
-       <div class="row container-fluid">
-            <h1>Investment Analysis System</h1>
-            <nav>
-                <!-- Dropdown menu -->
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="/" class="dropdown-item">Home</a>
-                        <a href="#" class="dropdown-item">Ratio Analysis</a>
-                        <a href="#" class="dropdown-item">Key Graphs</a>
-                    </div>
-                </div>
-            </nav>
-       </div>
-   </header>
+    <!-- Header / Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light scrolling-navbar">
+        <a class="navbar-brand" href="#">Investment Analysis System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Summary <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/filter">Filter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Price Data</a>
+            </li>   
+            </ul>
+            <!-- Search -->
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
    
     <!--Title/Recommendation Section  -->
-    <section class="title">
-        <h1>{{company.ticker.upper}}: {{company.name}} </h1>
-    </section>
-
-    <!-- Price Graph -->
-    <section class="price-graph">
-        <h1>PRICE GRAPH GOES HERE</h1>
+    <section class="background">
+        <!-- TODO: Add Title Section -->
+        <!-- Price Graph -->
+        <section class="price-graph">
+        </section>
     </section>
 
     <!-- key ratios section -->
     <section class="ratios container-fluid">
         <h1 style="text-align: center">Key Ratios</h1>
+        <hr>
         <div class="row">
-            <p class="col"><strong>Market Cap:</strong> {{ratios.market_cap}}</p>
-            <p class="col"><strong>Price Equity: </strong> {{ratios.price_equity}}</p>
+            <p class="col-sm"><strong>Market Cap:</strong> {{ratios.market_cap}}</p>
+            <p class="col-sm"><strong>Price Equity: </strong> {{ratios.price_equity}}</p>
         </div>
         <div class="row">
-            <p class="col"><strong>EPS: </strong> {{ratios.EPS}}</p>
-            <p class="col"><strong>NTA: </strong> {{ratios.NTA}}</p>
+            <p class="col-sm"><strong>EPS: </strong> {{ratios.EPS}}</p>
+            <p class="col-sm"><strong>NTA: </strong> {{ratios.NTA}}</p>
         </div>
         <div class="row">
-            <p class="col"><strong>DPS: </strong> {{ratios.DPS}}</p>
-            <p class="col"><strong>Beta: </strong> {{ratios.beta_value}}</p>
+            <p class="col-sm"><strong>DPS: </strong> {{ratios.DPS}}</p>
+            <p class="col-sm"><strong>Beta: </strong> {{ratios.beta_value}}</p>
         </div>
         <div class="row">
-            <p class="col"><strong>Price NTA: </strong> {{ratios.price_NTA}}</p>
-            <p class="col"><strong>Net Yield: </strong> {{ratios.Net_yield}}</p>
+            <p class="col-sm"><strong>Price NTA: </strong> {{ratios.price_NTA}}</p>
+            <p class="col-sm"><strong>Net Yield: </strong> {{ratios.Net_yield}}</p>
         </div>
         <div class="row">
-            <p class="col"><strong>Sharpe: </strong> {{ratios.Sharpe}}</p>
-            <p class="col"><strong>Debt Equity: </strong> {{ratios.debt_equity}}</p>
+            <p class="col-sm"><strong>Sharpe: </strong> {{ratios.Sharpe}}</p>
+            <p class="col-sm"><strong>Debt Equity: </strong> {{ratios.debt_equity}}</p>
         </div>
         <div class="row">
-            <p class="col"><strong>Current: </strong> {{ratios.current}}</p>
-            <p class="col"><strong>ROE: </strong> {{ratios.ROE}}</p>
+            <p class="col-sm"><strong>Current: </strong> {{ratios.current}}</p>
+            <p class="col-sm"><strong>ROE: </strong> {{ratios.ROE}}</p>
         </div>
         <div class="row">
-            <p class="col"><strong>ROA: </strong> {{ratios.ROA}}</p>
-            <p class="col"><strong>Quicke Ratio: </strong> {{ratios.quick_ratio}}</p>
+            <p class="col-sm"><strong>ROA: </strong> {{ratios.ROA}}</p>
+            <p class="col-sm"><strong>Quicke Ratio: </strong> {{ratios.quick_ratio}}</p>
         </div>
     </section>
 
-    <!-- *Company Profile -->
+    <!-- Company Profile -->
     <section class="company-profile container-fluid">
         <h1 style="text-align: center">Company Profile</h1>
         <div class="row">
@@ -104,7 +114,7 @@
     <!-- TODO: Assets & Liabilities Section -->
 
     <!-- Directors section -->
-    <section class="directors container">
+    <section class="directors container-fluid">
         <h1 style="text-align: center">Directors</h1>
         <!-- Loop through directors queryse. Create a row and two columns for each director to ensure structure is tidy -->
         {%for d in directors%}
@@ -134,8 +144,23 @@
     </section>
 
 
-
-
+    <!-- Footer Sections -->
+    <footer>
+        <h1>An MCS Enterprise</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md">
+                    <a href="/">Home</a>
+                </div>
+                <div class="col-md">
+                    <a href="#">About</a>
+                </div>
+                <div class="col-md">
+                    <a href="/">Team</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Bootstrap Javascript -->

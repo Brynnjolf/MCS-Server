@@ -1,0 +1,17 @@
+main {
+    margin-top: 56px;
+    .form {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 100px;
+        & > * {
+            margin: 5px;
+        }
+        input {
+            width: 20em;
+            padding: 3px;
+        }
+    }
+}

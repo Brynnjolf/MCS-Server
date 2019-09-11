@@ -1,56 +1,74 @@
-// @import 'medias';
+
 $line-color: rgba(0, 0, 0, 0.283);
+$fontdark: rgba(38, 38, 38, 0.729);
+$fontlight: rgba(74, 74, 74, 0.407);
+$greengradient: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
 * {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Montserrat';
 }
 
-// HEADER / NAV SECTION
-header {
-    border-bottom: 1px solid $line-color;
-    padding: 0.5em;
-    h1 {
-        font-size: 1.8rem;
-    }
-    .row {
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    nav {
-        display: flex;
-        justify-content: space-between;
-        width: 10%;
-    }
+body {
+    color: $fontdark;
 }
+
+.navbar {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.153);
+}
+
 
 // Title/Recommendation Section
 .title {
-    padding: 1em;
+    margin-top: 56px;
+    padding: 1rem;
     text-align: center;
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+.background {
+    background: url('./photos/financial-graph-compressed.jpg');
+    background-size: cover;
+    title {
+       h1 {
+            color: white;
+        }
+    }
 }
 
 // Price graph placeholder
 .price-graph {
-    padding: 4rem;
-    margin: 2em;
-    border: 1px solid $line-color;
-    h1 {
-        font-size: 1rem;
-        text-align: center;
-        transform-origin: center;
-        transform: rotate(-30deg);
-        color: rgba(0, 0, 0, 0.413);
+    height: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.153);
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.311);
     }
 }
 
 // Ratios Section
 .ratios {
-    padding-bottom: 1em;
-    border-top: 1px solid $line-color;
-    border-bottom: 1px solid $line-color;
+    padding: 2em;
     h1 {
-        padding: 1rem;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+    p {
+        text-align: center;
+        margin: 0.7em 0;
+    }
+    hr {
+        margin: 1em 0;
+        border-color: rgba(0, 0, 0, 0.057);
     }
 }
 
@@ -58,11 +76,76 @@ header {
 
 // Company Profile
 .company-profile {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid $line-color;
+    padding: 2rem;
+    h1 {
+        font-size: 1.4em;
+        font-weight: bold;
+    }
     .row {
         flex-flow: column;
+        padding: 2em;
+        h2 {
+            margin: 15px 0 15px;
+            font-size: 1em;
+            font-weight: bold;
+            color: $fontdark;
+            line-height: 1.2;
+        }
+        p {
+            font-weight: lighter;
+            color: $fontlight;
+            line-height: 1.6;
+        }
+    }
+    // shadow
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05), 0px -1px 10px rgba(0, 0, 0, 0.071);
+}
+
+// Directors
+.directors {
+    padding: 2em;
+    h1, h3 {
+        color: $fontdark;
+    }
+    h1 {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 2em;
+    }
+    h3 {
+        font-size: 1em;
+        font-weight: bold
+    }
+    p {
+        color: $fontlight;
+    }
+    .row {
+        padding: 0.2em 0 0;
+    }
+
+}
+
+
+// Footer stylings
+footer {
+    padding-bottom: 5em;
+    text-align: center;
+    h1 {
+        color: rgba(0, 0, 0, 0.146);
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+    // Top border before
+    &::before {
+        content: '';
+        display: block;
+        width: 80%;
+        border-top: 1px solid rgba(0, 0, 0, 0.105);
+        margin: auto;
+        padding: 1em;
     }
 }
 
+
+// import medias
+@import 'medias';
