@@ -6,6 +6,7 @@ from subprocess import Popen, PIPE, STDOUT
 import json
 from .models import *
 from django.views.decorators.csrf import csrf_exempt
+import saving_data
 # Create your views here.
 
 # Landing Page
@@ -51,4 +52,16 @@ def update(request):
     if request.method == 'GET':
         return HttpResponse('WRONG TYPE BUCKO, AINT NO GETS AROUND THIS PART OF TOWN')
     if request.method == 'POST':
-        return render(request, 'main/updated.html',{'request': request})
+        if request.FILES:
+            data = request.FILES
+            print(data)
+            htmlData = 'You sent some files'
+        elif request.body != "":
+            data = request.body.decode('utf-8')
+            saving_data.save_json_data(data)
+            htmlData = 'You sent JSON data!'
+            print(htmlData)
+        else:
+            htmlData = 'You didnt send anything'
+
+        return render(request, 'main/updated.html',{'htmlData': htmlData})

@@ -1,3 +1,9 @@
+venv
+webServer/config.json
+.vscode/
+config.json
+
+*.pyc
 webServer/config.json
 # local bash commands
 setup
