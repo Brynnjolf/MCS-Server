@@ -121,3 +121,10 @@ class Score(models.Model):
     date = models.DateTimeField('Date Scraped', primary_key=True)
     ticker = models.ForeignKey(Company, on_delete=models.CASCADE, db_column="ticker")
     score = models.FloatField()
+
+
+# Storing company filters
+class Filter(models.Model):
+    risk = models.CharField(max_length=20)
+    index = models.CharField(max_length=20)
+    blacklist = models.TextField()

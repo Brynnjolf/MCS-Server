@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.template import loader
 from django.http import HttpResponse, Http404
+from django.views.decorators.csrf import ensure_csrf_cookie
 from subprocess import Popen, PIPE, STDOUT
 import json
 from .models import *
@@ -34,6 +35,14 @@ def summary(request, ticker):
     return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios})
 
 
+# add filter information to db
+@csrf_exempt
+def postfilter(request):
+    if request.method == 'POST':
+        # data = eval(request.body.decode('utf-8'))
+        data = eval(request.body.decode('utf-8'))
+        Filter.objects.create(risk = data['risk'], index = data['index'], blacklist = data['blacklist'])
+        return HttpResponse(data)
 
 
 #confirmation of Scraping

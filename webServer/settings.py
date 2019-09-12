@@ -138,3 +138,6 @@ STATICFILES_DIRS = ( #! don't push
 STATIC_URL = '/static/'
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 52428800
+
+
+# CSRF settings

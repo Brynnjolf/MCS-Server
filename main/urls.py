@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('filter/', views.filter, name='filter'),
     path('update', views.update, name='update'),
+    path('postfilter', views.postfilter, name='postfilter'),
     path('<str:ticker>/', views.summary, name='summary'),
 ]   

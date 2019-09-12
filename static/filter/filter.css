@@ -1,5 +1,5 @@
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Spinnaker', sans-serif;
   list-style: none; }
 
 main {
@@ -49,7 +49,7 @@ main {
       .profile-boxes .content .popup p {
         margin: 0 1em; }
       .profile-boxes .content .popup:hover {
-        opacity: 80; }
+        opacity: 1; }
 
 .sin-stock {
   text-align: center;

@@ -1,5 +1,5 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Spinnaker', sans-serif;
     list-style: none;
 }
 main {
@@ -53,13 +53,13 @@ main {
             height: 80%;
             background-color: black;
             color: white;
+            opacity: 0;
+            transition: opacity 0.7s;
             p {
                 margin: 0 1em;
             }
-            opacity: 0;
-            transition: opacity 0.7s;
             &:hover {
-                opacity: 80;
+                opacity: 1;
             }
         }
     }
