@@ -4,3 +4,5 @@ webServer/config.json
 config.json
 
 *.pyc
+
+media/

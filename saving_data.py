@@ -1,4 +1,5 @@
 from main.models import *
+from django.core.files.storage import default_storage
 from datetime import datetime
 import json
 
@@ -120,3 +121,10 @@ def save_json_data(payload):
                                     dividends = dividend))
                         Dividends.objects.bulk_create(divList, ignore_conflicts= True)
                         print("Saved dividend data for ", companyKey)
+
+def save_files(files):
+    for file in files.values():
+        if default_storage.exists(file.name):
+            default_storage.delete(file.name)
+        file_name = default_storage.save(file.name, file)
+        print("Saved uploaded file to: " + default_storage.url(file_name))
