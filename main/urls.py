@@ -4,8 +4,9 @@ from . import views
 
 app_name = 'main'
 urlpatterns = [
-    path('', views.index, name = 'index'),
-    path('update', views.update, name='upate'),
+    path('', views.index, name='index'),
+    path('filter/', views.filter, name='filter'),
+    path('update', views.update, name='update'),
+    path('postfilter', views.postfilter, name='postfilter'),
     path('<str:ticker>/', views.summary, name='summary'),
-    # path('list', views.companyList, name = 'List'),
 ]   
