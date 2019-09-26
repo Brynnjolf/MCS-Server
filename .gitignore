@@ -2,6 +2,8 @@ venv
 webServer/config.json
 .vscode/
 config.json
+./jobs.json
+./jsconfig.json
 
 *.pyc
 webServer/config.json

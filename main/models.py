@@ -8,7 +8,7 @@ class Company(models.Model):
     sector = models.CharField(max_length = 255)
 
 class Summary(models.Model):
-    ticker_date = ticker_date = models.CharField(max_length=13, primary_key=True)
+    ticker_date = models.CharField(max_length=13, primary_key=True)
     date = models.DateTimeField('Date Scraped')
     ticker = models.ForeignKey(Company, on_delete=models.CASCADE, db_column="ticker")
     market_cap = models.BigIntegerField()

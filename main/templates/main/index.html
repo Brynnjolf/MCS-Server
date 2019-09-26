@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet"> <!--MontSerrat-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{%static 'home/main.css'%}">
     <title>Home Page</title>
@@ -38,13 +39,74 @@
             </div>
     </nav>
 
-    <main style="margin-top: 56px">
-        <h1>Welcome To the Home Page!</h1>
-        <p>Here, We will display The initial summary of the user</p>
-        <p>Additional companies can currently be viewed by simply adding "/company_name" to the url</p>
-        <p>Currently, only WBC and ANZ work</p>
+    <main>
+        <section id="banner">
+            <h1>Deciding Where To Invest Can Be Difficult</h1>
+            <p>Let's Make It Simple</p>
+            <button onclick="location.href='/filter'">Start Now</button>
+        </section>
+        <section id="guide">
+            <span class="shape arrow">></span>
+            <span class="shape plus">+</span>
+            <span class="shape colon">:</span>
+            <span class="shape times">x</span>
+            <span class="shape divide">/</span>
+            <span class="shape dollar">$</span>
+            <div class="container-fluid">
+                <!-- First step -->
+                <div class="row">
+                    <div class="col-sm step">
+                        <h2>Set Your Preferences</h2>
+                        <hr>
+                        <p>Find a Company That Matches Your Requirements With 3 Simple Settings</p>
+                    </div>
+                    <div class="col-sm">
+                        <h1>01</h1>
+                        <ul>
+                            <li>Define Risk Profile</li>
+                            <li>Select Specific Sector Or Index</li>
+                            <li>Blacklist Stocks That Don't Align With You</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Second Step -->
+                <div class="row">
+                    <div class="col-sm step">
+                        <h2>Choose From The Best</h2>
+                        <hr>
+                        <p>All companies listed are a part of the S&P NZX50</p>
+                    </div>
+                    <div class="col-sm">
+                        <h1>02</h1>
+                        <ul>
+                            <li>Define Risk Profile</li>
+                            <li>Select Specific Sector Or Index</li>
+                            <li>Blacklist Stocks That Don't Align With You</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Third step -->
+                <div class="row">
+                    <div class="col-sm step">
+                        <h2>Simplify Financial Jargon</h2>
+                        <hr>
+                        <p>Don't let complexity get in the way of important decisions</p>
+                    </div>
+                    <div class="col-sm">
+                        <h1>03</h1>
+                        <ul>
+                            <li>Recommendation Score</li>
+                            <li>Key Ratios Interpretation And Analysis</li>
+                            <li>Better Investment Decisions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p><a href="#">Back To Top</a></p>
+        </footer>
     </main>
-
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

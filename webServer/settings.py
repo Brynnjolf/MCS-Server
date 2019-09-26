@@ -15,11 +15,12 @@ import json
 import platform
 
 if platform.system() == "Darwin":
-    config_path = '/Users/Brynn/Desktop/mcsServer/webServer/config.json'
+    config_path = '/etc/config.json'
 if platform.system() == "Windows":
     config_path = r'C:\Users\Kiran\Documents\GitHub\MCS-Server\config.json'
 else:
-    config_path = '/etc/config.json'
+    config_path = '/Users/Brynn/Desktop/mcsServer/webServer/config.json'
+
 with open(config_path) as config_file:
     config = json.load(config_file)
 
@@ -36,7 +37,7 @@ SECRET_KEY = config['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['li555-251.members.linode.com','198.74.53.251', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['li555-251.members.linode.com','198.74.53.251', 'localhost', '127.0.0.1', '']
 
 
 # Application definition
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize'
 ]
 
 MIDDLEWARE = [

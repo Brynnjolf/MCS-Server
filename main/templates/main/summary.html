@@ -53,33 +53,27 @@
         <h1 style="text-align: center">Key Ratios</h1>
         <hr>
         <div class="row">
-            <p class="col-sm"><strong>Market Cap:</strong> {{ratios.market_cap}}</p>
-            <p class="col-sm"><strong>Price Equity: </strong> {{ratios.price_equity}}</p>
+            {%load humanize%}
+            <p class="col-sm"><strong>Market Cap:&nbsp;</strong>${{summary.market_cap|intcomma}}</p>
+            <p class="col-sm"><strong>ROE:&nbsp;</strong> {{ratios.return_On_Equity}}</p>
         </div>
         <div class="row">
-            <p class="col-sm"><strong>EPS: </strong> {{ratios.EPS}}</p>
-            <p class="col-sm"><strong>NTA: </strong> {{ratios.NTA}}</p>
+            <p class="col-sm"><strong>EPS:&nbsp;</strong> {{ratios.ePS}}</p>
+            <p class="col-sm"><strong>NTA:&nbsp;</strong> {{ratios.nTA}}</p>
         </div>
         <div class="row">
-            <p class="col-sm"><strong>DPS: </strong> {{ratios.DPS}}</p>
-            <p class="col-sm"><strong>Beta: </strong> {{ratios.beta_value}}</p>
+            <p class="col-sm"><strong>DPS:&nbsp;</strong> {{ratios.net_DPS}}</p>
+            <p class="col-sm"><strong>Beta:&nbsp;</strong> {{ratios.beta_Value}}</p>
         </div>
         <div class="row">
-            <p class="col-sm"><strong>Price NTA: </strong> {{ratios.price_NTA}}</p>
-            <p class="col-sm"><strong>Net Yield: </strong> {{ratios.Net_yield}}</p>
+            <p class="col-sm"><strong>Price NTA:&nbsp;</strong> {{ratios.price_NTA}}</p>
+            <p class="col-sm"><strong>Net Yield:&nbsp;</strong> {{ratios.net_Yield}}</p>
         </div>
         <div class="row">
-            <p class="col-sm"><strong>Sharpe: </strong> {{ratios.Sharpe}}</p>
-            <p class="col-sm"><strong>Debt Equity: </strong> {{ratios.debt_equity}}</p>
+            <p class="col-sm"><strong>Sharpe:&nbsp;</strong> {{ratios.sharpe}}</p>
+            <p class="col-sm"><strong>Debt Equity:&nbsp;</strong> {{ratios.debt_Equity}}</p>
         </div>
-        <div class="row">
-            <p class="col-sm"><strong>Current: </strong> {{ratios.current}}</p>
-            <p class="col-sm"><strong>ROE: </strong> {{ratios.ROE}}</p>
-        </div>
-        <div class="row">
-            <p class="col-sm"><strong>ROA: </strong> {{ratios.ROA}}</p>
-            <p class="col-sm"><strong>Quicke Ratio: </strong> {{ratios.quick_ratio}}</p>
-        </div>
+
     </section>
 
     <!-- Company Profile -->

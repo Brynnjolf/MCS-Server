@@ -1,12 +1,16 @@
 from django.shortcuts import render, get_object_or_404
 from django.template import loader
 from django.http import HttpResponse, Http404
+from django.core.serializers.json import DjangoJSONEncoder
+from django.forms.models import model_to_dict
 from django.views.decorators.csrf import ensure_csrf_cookie
 from subprocess import Popen, PIPE, STDOUT
 import json
 from .models import *
 from django.views.decorators.csrf import csrf_exempt
 import saving_data
+import re
+
 # Create your views here.
 
 # Landing Page
@@ -23,18 +27,46 @@ def filter(request):
 
 # Company summary page
 def summary(request, ticker):
-    company = get_object_or_404(Company, ticker=ticker) 
-    price = company.price_set.latest('date')
-    ratios = company.ratios_set.latest('date')
+    print(ticker.upper())
+    company = get_object_or_404(Company, ticker=ticker.upper()) 
+    price = company.price_set.latest('ticker_date')
+    ratios = company.ratios_set.latest('ticker_date')
     directors = company.directors_set.filter
-    profile = company.companyprofile_set.latest('date')
-    #bokeh(import data)
-    #create graph
-    #get html
-    #get js
+    profile = company.companyprofile_set.latest('ticker_date')
+    summary = company.summary_set.latest('ticker_date')
+    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios, 'summary': summary})
 
-    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios})
-
+# Filtered table page
+def table(request):
+    # take filter dictionary and use that to match strings with the string in the company description
+    sinStocks = ['Fuel', 'Alcohol', 'main']
+    flag = False
+    filteredList = []
+    tablefilter = Filter.objects.get(id=1)
+    blackList = tablefilter.blacklist.split(', ')
+    sinStocks = []
+    companyList = Company.objects.all()
+    for company in companyList:
+        profile = company.companyprofile_set.latest('ticker_date')
+        # if any(word in profile.description for word in blackList):
+        #     print('SINNER', company.ticker)
+        for sin in blackList:
+            if re.search(sin, profile.description, re.IGNORECASE):
+                print('SINNER', company.ticker)
+                sinStocks.append(company)
+    companyList = list(companyList)
+    for company in sinStocks:
+        companyList.remove(company)
+    # Can now return companyList as the filtered list
+    json_list = []
+    for el in companyList:
+        # convert model to json
+        dict_obj = model_to_dict(el)
+        # append price to dict_obj
+        
+        # append dict to json_list
+        json_list.append(json.dumps(dict_obj))
+    return render(request,'main/table.html', context={'companies': companyList, 'json_list': json_list, 'test': [1,{'name':'brynn'},3,4,5]})
 
 # add filter information to db
 @csrf_exempt
@@ -42,8 +74,8 @@ def postfilter(request):
     if request.method == 'POST':
         # data = eval(request.body.decode('utf-8'))
         data = eval(request.body.decode('utf-8'))
-        Filter.objects.create(risk = data['risk'], index = data['index'], blacklist = data['blacklist'])
-        return HttpResponse(data)
+        Filter.objects.update_or_create(id=1,defaults={'risk': data['risk'], 'index': data['index'], 'blacklist': data['blacklist']})
+        return HttpResponse(data,200)
 
 
 #confirmation of Scraping
