@@ -3,6 +3,9 @@
   padding: 0;
   font-family: 'montserrat', 'serif'; }
 
+.nav-item {
+  margin-right: 5rem; }
+
 main {
   line-height: 3;
   margin-top: 56px;
@@ -11,7 +14,8 @@ main {
 
 #banner {
   padding: 15%;
-  background: #071F4E; }
+  background: url("./background.jpg") #071F4E;
+  background-size: cover; }
   #banner h1 {
     font-size: 2rem;
     color: white;
@@ -86,7 +90,7 @@ main {
       top: 50%;
       left: 50%;
       font-weight: bold;
-      color: rgba(130, 222, 205, 0.05);
+      color: rgba(130, 222, 205, 0.06);
       transform: scale(100); }
 
 /*# sourceMappingURL=main.css.map */

@@ -62,8 +62,10 @@ def table(request):
     for el in companyList:
         # convert model to json
         dict_obj = model_to_dict(el)
-        # append price to dict_obj
-        
+        # append price to dict_obj by retrieving the latest market price != 0 (0 means no price change)
+        dict_obj['price'] = el.price_set.exclude(price=0).latest('date').price
+        dict_obj['marketcap'] = el.summary_set.latest('date').market_cap
+        dict_obj['marketcap'] = el.summary_set.latest('date').market_cap
         # append dict to json_list
         json_list.append(json.dumps(dict_obj))
     return render(request,'main/table.html', context={'companies': companyList, 'json_list': json_list, 'test': [1,{'name':'brynn'},3,4,5]})

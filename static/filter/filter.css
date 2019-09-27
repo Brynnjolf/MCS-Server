@@ -2,15 +2,19 @@
   font-family: 'Spinnaker', sans-serif;
   list-style: none; }
 
+.nav-item {
+  margin-right: 5rem; }
+
 main {
-  margin-top: 56px; }
+  margin-top: 56px;
+  position: relative; }
 
 .form {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
-  margin: 100px 100px 50px; }
+  margin: 10% 10% 5%; }
   .form > * {
     margin: 5px; }
   .form h1 {
@@ -18,12 +22,16 @@ main {
     font-size: 4em;
     margin: 0 0 0.5em; }
   .form input {
-    width: 35em;
+    width: 80%;
     padding: 3px; }
+  .form .generate {
+    padding: 1% 2%; }
 
 .profile-boxes {
   text-align: center;
-  position: relative; }
+  position: relative;
+  width: 85%;
+  margin: auto; }
   .profile-boxes .marg {
     margin: 1em 0; }
   .profile-boxes .content {
@@ -55,8 +63,8 @@ main {
   text-align: center;
   color: white;
   padding: 2em;
-  background-color: #16379A;
-  width: 80%;
+  background-color: #3B82A1;
+  width: 82%;
   margin: 50px auto 0; }
   .sin-stock hr {
     border-color: rgba(255, 255, 255, 0.222);

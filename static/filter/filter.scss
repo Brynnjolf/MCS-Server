@@ -1,9 +1,15 @@
 * {
-    font-family: 'Spinnaker', sans-serif;
+    font-family: 'montserrat', 'serif';
     list-style: none;
 }
+
+.nav-item {
+    margin-right: 5rem;
+}
+
 main {
     margin-top: 56px;
+    position: relative;
 }
 // Input form section
 .form {
@@ -11,7 +17,7 @@ main {
     flex-flow: column;
     align-items: center;
     justify-content: space-around;
-    margin: 100px 100px 50px;
+    margin: 10% 10% 5%;
     & > * {
         margin: 5px;
     }
@@ -21,14 +27,20 @@ main {
         margin: 0 0 0.5em;
     }
     input {
-        width: 35em;
+        width: 80%;
         padding: 3px;
     }
+    .generate {
+        padding: 1% 2%;
+    }
+
 }
 // Risk profile section
 .profile-boxes {
     text-align: center;
     position: relative;
+    width: 85%;
+    margin: auto;
     .marg {
         margin: 1em 0;
     }
@@ -70,8 +82,8 @@ main {
     text-align: center;
     color: white;
     padding: 2em;
-    background-color: #16379A;
-    width: 80%;
+    background-color: #3B82A1;
+    width: 82%;
     margin: 50px auto 0;
     hr {
         border-color: rgba(255, 255, 255, 0.222);

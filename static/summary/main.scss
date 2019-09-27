@@ -7,7 +7,11 @@ $greengradient: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Montserrat';
+    font-family: 'montserrat', 'serif';
+}
+
+.nav-item {
+    margin-right: 5rem;
 }
 
 body {

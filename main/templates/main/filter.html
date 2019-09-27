@@ -22,24 +22,17 @@
         </button>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Summary <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Filter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Price Data</a>
-            </li>   
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">Filter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/table">Company Search</a>
+                </li>   
             </ul>
-            <!-- Search -->
-            <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
@@ -48,12 +41,12 @@
         <!-- form section, selecting filters -->
         <section class="form" >
             <h1>Select Your Filters</h1>
-            <select id='risk' class="selectpicker input" data-width='35em' title="Choose Your Risk Profile">
+            <select id='risk' class="selectpicker input" data-width='80%' title="Choose Your Risk Profile">
                 <option value="conservative">Conservative</option>
                 <option value="balanced">Balanced</option>
                 <option value="growth">Growth</option>
             </select>
-            <select id='index' class="selectpicker input" data-width='35em' title="Choose Your Index or Sector">
+            <select id='index' class="selectpicker input" data-width='80%' title="Choose Your Index or Sector">
                 <option value="nzx">NZX S&P 50</option>
                 <option value="lmao" disabled>Consumer Discretionary</option>
                 <option value="community" disabled>Consumer Staples</option>
@@ -114,7 +107,7 @@
         </section>
 
         <!-- Sin Stock area -->
-        <section class="sin-stock">
+        <section class="sin-stock container">
             <h1>Sin Stock Screening</h1>
             <hr>
             <p>Filter out companies that do not meet your standards!</p>
