@@ -1,5 +1,5 @@
 $('document').ready(function() {
-    // Click the generate button, will take all information in form and send it to API endpoint via AJAX
+    // Click the generate button, will take all information in form and send it to the relevent API endpoint
     $('.generate').click(function() {
         // set up csrf token
         csrftoken = Cookies.get('csrftoken');
@@ -13,9 +13,8 @@ $('document').ready(function() {
         console.log(risk,index,blacklist);
         // pseudo loading for client immersion, using settimeout
         setTimeout(function() {
-            // TODO: Change from redirecting to homepage, to redirecting to company table page
-            window.location = '/';
+            // TODO: Change from redirecting 
+            window.location = '/table';
         }, 3000);
-
     });
 });
