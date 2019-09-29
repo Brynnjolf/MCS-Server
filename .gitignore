@@ -6,6 +6,10 @@ config.json
 ./jsconfig.json
 
 *.pyc
+<<<<<<< HEAD
+
+media/
+=======
 webServer/config.json
 # local bash commands
 setup
@@ -134,3 +138,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+>>>>>>> origin/master

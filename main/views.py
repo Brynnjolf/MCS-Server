@@ -6,6 +6,7 @@ from django.forms.models import model_to_dict
 from django.views.decorators.csrf import ensure_csrf_cookie
 from subprocess import Popen, PIPE, STDOUT
 import json
+
 from .models import *
 from django.views.decorators.csrf import csrf_exempt
 import saving_data
@@ -87,14 +88,12 @@ def update(request):
         return HttpResponse('WRONG TYPE BUCKO, AINT NO GETS AROUND THIS PART OF TOWN')
     if request.method == 'POST':
         if request.FILES:
-            data = request.FILES
-            print(data)
+            saving_data.save_files(request.FILES)
             htmlData = 'You sent some files'
         elif request.body != "":
             data = request.body.decode('utf-8')
             saving_data.save_json_data(data)
             htmlData = 'You sent JSON data!'
-            print(htmlData)
         else:
             htmlData = 'You didnt send anything'
 
