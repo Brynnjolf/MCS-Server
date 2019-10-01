@@ -36,8 +36,14 @@ def summary(request, ticker):
     directors = company.directors_set.filter(date = latest_date)
     profile = company.companyprofile_set.latest('ticker_date')
     summary = company.summary_set.latest('ticker_date')
+    indices = {
+        'netYield': summary.net_dividend_yield_index*100,
+        'sharpe': summary.sharpe_ratio_index*100,
+        'ROE': summary.return_on_equity_index*100,
+        'DE': summary.debt_equity_index*100,
 
-    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios, 'summary': summary})
+    }
+    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios, 'summary': summary, 'indices': indices})
 
 # Filtered table page
 def table(request):
@@ -107,3 +113,4 @@ def getPriceData(request, ticker):
         priceSet = company.price_set.all()[:1095]
         priceJSON = serializers.serialize('json', priceSet)
         return HttpResponse(priceJSON, content_type='application/json')
+

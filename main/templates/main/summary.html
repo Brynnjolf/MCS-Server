@@ -51,27 +51,71 @@
             <div class="row">
                 {%load humanize%}
                 <p class="col-sm"><strong>Market Cap:&nbsp;</strong>${{summary.market_cap|intcomma}}</p>
-                <p class="col-sm"><strong>ROE:&nbsp;</strong> {{ratios.return_On_Equity}}</p>
+                <p class="col-sm"><strong>ROE:&nbsp;</strong> {{ratios.return_On_Equity|floatformat:2}}</p>
             </div>
             <div class="row">
-                <p class="col-sm"><strong>EPS:&nbsp;</strong> {{ratios.ePS}}</p>
-                <p class="col-sm"><strong>NTA:&nbsp;</strong> {{ratios.nTA}}</p>
+                <p class="col-sm"><strong>EPS:&nbsp;</strong> {{ratios.ePS|floatformat:2}}</p>
+                <p class="col-sm"><strong>NTA:&nbsp;</strong> {{ratios.nTA|floatformat:2}}</p>
             </div>
             <div class="row">
-                <p class="col-sm"><strong>DPS:&nbsp;</strong> {{ratios.net_DPS}}</p>
-                <p class="col-sm"><strong>Beta:&nbsp;</strong> {{ratios.beta_Value}}</p>
+                <p class="col-sm"><strong>DPS:&nbsp;</strong> {{ratios.net_DPS|floatformat:2}}</p>
+                <p class="col-sm"><strong>Beta:&nbsp;</strong> {{ratios.beta_Value|floatformat:2}}</p>
             </div>
             <div class="row">
-                <p class="col-sm"><strong>Price NTA:&nbsp;</strong> {{ratios.price_NTA}}</p>
-                <p class="col-sm"><strong>Net Yield:&nbsp;</strong> {{ratios.net_Yield}}</p>
+                <p class="col-sm"><strong>Price NTA:&nbsp;</strong> {{ratios.price_NTA|floatformat:2}}</p>
+                <p class="col-sm"><strong>Net Yield:&nbsp;</strong> {{ratios.net_Yield|floatformat:2}}</p>
             </div>
             <div class="row">
-                <p class="col-sm"><strong>Sharpe:&nbsp;</strong> {{ratios.sharpe}}</p>
-                <p class="col-sm"><strong>Debt Equity:&nbsp;</strong> {{ratios.debt_Equity}}</p>
+                <p class="col-sm"><strong>Sharpe:&nbsp;</strong> {{ratios.sharpe|floatformat:2}}</p>
+                <p class="col-sm"><strong>Debt Equity:&nbsp;</strong> {{ratios.debt_Equity|floatformat:2}}</p>
             </div>
     
         </section>
     
+        <!-- Key Ratio Analysis -->
+        <section class="ratio-analysis container-fluid">
+            <h1>Key Ratio Analysis</h1>
+            <table class="table">
+                    <thead>
+                      <tr>
+                        <th style='width: 20%' scope="col">Name</th>
+                        <th scope="col">Ratio</th>
+                        <th scope="col">Score</th>
+                        <th style='width: 40%' scope="col">Analysis</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Net Yield</th>
+                        <td>{{ratios.net_Yield|floatformat:2}}%</td>
+                        <td>{{indices.netYield|floatformat:0}}</td>
+                        <td>Net Yield is the dividend received in relation to the share price after all expenses are removed. {{company.ticker}} provides {{ratios.net_Yield|floatformat:2}}% return relative to the share price. This means that for every $1 dollar invested, a return of {{ratios.net_Yield|floatformat:2}} cents can be gained. This is higher than {{indices.netYield|floatformat:0}}% of companies in the NZX. </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Sharpe Ratio</th>
+                        <td>{{ratios.sharpe|floatformat:2}}%</td>
+                        <td>{{indices.sharpe|floatformat:0}}</td>
+                        <td>Sharpe Ratio is used to help investors understand the return of an investment compared to its risk. The Sharpe Ratio for {{company.ticker}} is higher than {{indices.sharpe|floatformat:0}}% of companies in the NZX. </td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Return on Equity</th>
+                        <td>{{ratios.return_On_Equity|floatformat:2}}</td>
+                        <td>{{indices.ROE|floatformat:0}}</td>
+                        <td>ROE is used to measure how effectively management is using a company’s assets to create profits. This means that for every $1 dollar of equity, ${{ratios.return_On_Equity|floatformat:2}} of profits can be generated. The ROE for {{company.ticker}} is higher than {{indices.ROE|floatformat:0}}% of companies on the NZX.
+                      </tr>
+                      <tr>
+                        <th scope="row">Debt Equity</th>
+                        <td>{{ratios.debt_Equity|floatformat:2}}</td>
+                        <td>{{indices.DE|floatformat:0}}</td>
+                        <td>Debt/Equity reflects the ability of shareholder equity to cover all outstanding debts in the event of a business downturn.
+                            {{company.ticker}} has ${{ratios.debt_Equity|floatformat:2}} of debt for every $1 of equity. This is lower than {{indices.DE|floatformat:0}}% of companies on the NZX.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+        </section>
+        
+
         <!-- Company Profile -->
         <section class="company-profile container-fluid">
             <h1 style="text-align: center">Company Profile</h1>
@@ -101,7 +145,6 @@
             </div>
         </section>
     
-        <!-- TODO: Assets & Liabilities Section -->
     
         <!-- Directors section -->
         <section class="directors container-fluid">
@@ -143,7 +186,7 @@
                 </div>
                 <div class="col">
                     <p>The Annual Report provides a comprehensive report on a company's activities over a financial year</p>
-                    <button onclick='annualreport()'>Download Annual Report</button>
+                    <button onclick='annuaReportl()'>Download Annual Report</button>
                 </div>
             </div>
         </section>
