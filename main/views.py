@@ -31,7 +31,8 @@ def summary(request, ticker):
     company = get_object_or_404(Company, ticker=ticker.upper()) 
     price = company.price_set.latest('ticker_date')
     ratios = company.ratios_set.latest('ticker_date')
-    directors = company.directors_set.filter
+    latest_date = company.directors_set.latest('date').date # to get directors, find the date of the latest object in the directors lists. Then, filter the entire list by only the latest date.
+    directors = company.directors_set.filter(date = latest_date)
     profile = company.companyprofile_set.latest('ticker_date')
     summary = company.summary_set.latest('ticker_date')
     priceSet = list(company.price_set.all()[:10])
