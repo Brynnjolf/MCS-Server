@@ -16,10 +16,19 @@ body {
 #recommendation {
   padding: 5% 10%;
   text-align: center; }
+  #recommendation .title {
+    margin: 5%;
+    font-size: 2rem;
+    font-weight: bold; }
+  #recommendation .rec {
+    font-size: 2rem; }
+  #recommendation .fraction {
+    font-weight: lighter;
+    color: rgba(74, 74, 74, 0.407); }
   #recommendation hr {
     width: 30%;
     border-top: 4px solid #40C7C0;
-    margin: 0;
+    margin: 0 0 0;
     margin: auto; }
   #recommendation span {
     font-weight: bold; }
@@ -86,6 +95,21 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, 0.105);
     margin: auto;
     padding: 1em; }
+
+.files .col {
+  padding: 4.5%;
+  text-align: center; }
+  .files .col button {
+    background-color: #B5386D;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s; }
+    .files .col button:hover {
+      background-color: #E6B1c8;
+      color: #181818; }
 
 @media (min-width: 554px) {
   .ratios, .company-profile, .directors {

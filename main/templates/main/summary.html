@@ -27,7 +27,7 @@
                     <a class="nav-link" href="/filter">Filter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Price Data</a>
+                    <a class="nav-link" href="/table">Price Data</a>
                 </li>   
             </ul>
             </form>
@@ -38,10 +38,12 @@
     <main>
         <!--Recommendation Score-->
         <section id='recommendation'>
-            <h1>Recomendation score: <span>{{summary.score}}</span> / 100</h1>
+            <h1 class='title'>{{company.name}}</h1>
+            <h1 class='rec'>Recomendation score: <span class='score'>{{summary.score}}</span> <span class='fraction'>/ 100</span></h1>
             <hr>
         </section>
     
+        <canvas width='70%' height='20px' id='priceChart'></canvas>
         <!-- key ratios section -->
         <section class="ratios container-fluid">
             <h1 style="text-align: center">Key Ratios</h1>
@@ -78,7 +80,7 @@
                     <p>{{profile.overview}}</p>
             </div>
             <div class="row">
-                    <h2>performance</h2>
+                    <h2>Performance</h2>
                     <p>{{profile.performance}}</p>
             </div>
             <div class="row">
@@ -130,6 +132,22 @@
             </div>
             {%endfor%}
         </section>
+
+        <section class='files container'>
+            <h3>Additional Information</h3>
+            <hr>
+            <div class='row'>
+                <div class="col">
+                    <p>The Tear Sheet provides an overview of a company's financial information, over a shorter accounting period</p>
+                    <button onclick='tearSheet()'>Download Tear Sheet</button>
+                </div>
+                <div class="col">
+                    <p>The Annual Report provides a comprehensive report on a company's activities over a financial year</p>
+                    <button onclick='annualreport()'>Download Annual Report</button>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <!-- Footer Sections -->
@@ -156,20 +174,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--Initialise price set globally-->
-    <script>
-        var priceSet = [];
-        var labels = [];
-        {%for el in priceSet%}
-        priceSet.push({{el.price}});
-        labels.push({{el.date}});
-        {%endfor%}
-        priceSet = priceSet.slice(-10);
-        labels = labels.slice(-10);
-    </script>
-    <script src="{% static 'summary/main.js'%}"></script>
     <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.js"
-    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
+    <script src="{% static 'summary/main.js'%}"></script>
 </body>
 </html>

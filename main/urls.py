@@ -9,5 +9,6 @@ urlpatterns = [
     path('table/', views.table, name='table'),
     path('update', views.update, name='update'),
     path('postfilter', views.postfilter, name='postfilter'),
+    path('api/getPriceData/<str:ticker>/', views.getPriceData, name='priceData'),
     path('<str:ticker>/', views.summary, name='summary'),
 ]   

@@ -2,10 +2,11 @@ from django.shortcuts import render, get_object_or_404
 from django.template import loader
 from django.http import HttpResponse, Http404
 from django.forms.models import model_to_dict
+from django.core import serializers
 from django.views.decorators.csrf import ensure_csrf_cookie
 from subprocess import Popen, PIPE, STDOUT
 import json
-
+import ast
 from .models import *
 from django.views.decorators.csrf import csrf_exempt
 import saving_data
@@ -35,8 +36,8 @@ def summary(request, ticker):
     directors = company.directors_set.filter(date = latest_date)
     profile = company.companyprofile_set.latest('ticker_date')
     summary = company.summary_set.latest('ticker_date')
-    priceSet = list(company.price_set.all()[:10])
-    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios, 'summary': summary, 'priceSet': priceSet})
+
+    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios, 'summary': summary})
 
 # Filtered table page
 def table(request):
@@ -99,3 +100,10 @@ def update(request):
             htmlData = 'You didnt send anything'
 
         return render(request, 'main/updated.html',{'htmlData': htmlData})
+
+def getPriceData(request, ticker):
+    if request.method == 'GET':
+        company = get_object_or_404(Company, ticker=ticker.upper()) 
+        priceSet = company.price_set.all()[:1095]
+        priceJSON = serializers.serialize('json', priceSet)
+        return HttpResponse(priceJSON, content_type='application/json')
