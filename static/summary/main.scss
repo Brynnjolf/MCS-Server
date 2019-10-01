@@ -1,4 +1,4 @@
-
+$light-green: #40C7C0;
 $line-color: rgba(0, 0, 0, 0.283);
 $fontdark: rgba(38, 38, 38, 0.729);
 $fontlight: rgba(74, 74, 74, 0.407);
@@ -10,6 +10,9 @@ $greengradient: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
     font-family: 'montserrat', 'serif';
 }
 
+main {
+    margin-top: 56px;
+}
 .nav-item {
     margin-right: 5rem;
 }
@@ -18,44 +21,17 @@ body {
     color: $fontdark;
 }
 
-.navbar {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.153);
-}
-
-
-// Title/Recommendation Section
-.title {
-    margin-top: 56px;
-    padding: 1rem;
+#recommendation {
+    padding: 5% 10%;
     text-align: center;
-    h1 {
-        font-size: 1.7rem;
+    hr {
+        width: 30%;
+        border-top: 4px solid $light-green;
+        margin: 0;
+        margin: auto;
     }
-}
-
-.background {
-    background: url('./photos/financial-graph-compressed.jpg');
-    background-size: cover;
-    title {
-       h1 {
-            color: white;
-        }
-    }
-}
-
-// Price graph placeholder
-.price-graph {
-    height: 300px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.153);
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.311);
+    span {
+        font-weight: bold;
     }
 }
 

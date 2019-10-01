@@ -24,6 +24,9 @@
             console.log(tabledata);
             // construct table with table data
             var table = new Tabulator('#company-table', {
+                initialSort: [
+                    {column: 'marketcap', dir: 'des'}
+                ],
                 layout: 'fitColumns',
                 data: tabledata,
                 columns: [

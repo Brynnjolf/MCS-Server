@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> <!--chart.js-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet"> <!--MontSerrat-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'summary/main.css'%}">
@@ -33,103 +34,103 @@
         </div>
     </nav>
    
-    <!--Title/Recommendation Section  -->
-    <section class="background">
-        <!-- TODO: Add Title Section -->
-        <!-- Price Graph -->
-        <section class="price-graph">
+
+    <main>
+        <!--Recommendation Score-->
+        <section id='recommendation'>
+            <h1>Recomendation score: <span>{{summary.score}}</span> / 100</h1>
+            <hr>
         </section>
-    </section>
-
-    <!-- key ratios section -->
-    <section class="ratios container-fluid">
-        <h1 style="text-align: center">Key Ratios</h1>
-        <hr>
-        <div class="row">
-            {%load humanize%}
-            <p class="col-sm"><strong>Market Cap:&nbsp;</strong>${{summary.market_cap|intcomma}}</p>
-            <p class="col-sm"><strong>ROE:&nbsp;</strong> {{ratios.return_On_Equity}}</p>
-        </div>
-        <div class="row">
-            <p class="col-sm"><strong>EPS:&nbsp;</strong> {{ratios.ePS}}</p>
-            <p class="col-sm"><strong>NTA:&nbsp;</strong> {{ratios.nTA}}</p>
-        </div>
-        <div class="row">
-            <p class="col-sm"><strong>DPS:&nbsp;</strong> {{ratios.net_DPS}}</p>
-            <p class="col-sm"><strong>Beta:&nbsp;</strong> {{ratios.beta_Value}}</p>
-        </div>
-        <div class="row">
-            <p class="col-sm"><strong>Price NTA:&nbsp;</strong> {{ratios.price_NTA}}</p>
-            <p class="col-sm"><strong>Net Yield:&nbsp;</strong> {{ratios.net_Yield}}</p>
-        </div>
-        <div class="row">
-            <p class="col-sm"><strong>Sharpe:&nbsp;</strong> {{ratios.sharpe}}</p>
-            <p class="col-sm"><strong>Debt Equity:&nbsp;</strong> {{ratios.debt_Equity}}</p>
-        </div>
-
-    </section>
-
-    <!-- Company Profile -->
-    <section class="company-profile container-fluid">
-        <h1 style="text-align: center">Company Profile</h1>
-        <div class="row">
-                <h2>Overview</h2>
-                <p>{{profile.overview}}</p>
-        </div>
-        <div class="row">
-                <h2>performance</h2>
-                <p>{{profile.performance}}</p>
-        </div>
-        <div class="row">
-                <h2>Outlook</h2>
-                <p>{{profile.outlook}}</p>
-        </div>
-        <div class="row">
-                <h2>Description</h2>
-                <p>{{profile.description}}</p>
-        </div>
-        
-    </section>
-
-    <!-- TODO: Income statement Section -->
-    <section class="income container-fluid">
-        <div class="row">
-
-        </div>
-    </section>
-
-    <!-- TODO: Assets & Liabilities Section -->
-
-    <!-- Directors section -->
-    <section class="directors container-fluid">
-        <h1 style="text-align: center">Directors</h1>
-        <!-- Loop through directors queryse. Create a row and two columns for each director to ensure structure is tidy -->
-        {%for d in directors%}
-        <!-- Set name and role labels during the first loop iteration -->
-        {%if forloop.first%}
-        <!-- Column labels  -->
-        <div class="row">
-            <div class="col">
-                <h3>Name</h3>
+    
+        <!-- key ratios section -->
+        <section class="ratios container-fluid">
+            <h1 style="text-align: center">Key Ratios</h1>
+            <hr>
+            <div class="row">
+                {%load humanize%}
+                <p class="col-sm"><strong>Market Cap:&nbsp;</strong>${{summary.market_cap|intcomma}}</p>
+                <p class="col-sm"><strong>ROE:&nbsp;</strong> {{ratios.return_On_Equity}}</p>
             </div>
-            <div class="col">
-                <h3>Role</h3>
+            <div class="row">
+                <p class="col-sm"><strong>EPS:&nbsp;</strong> {{ratios.ePS}}</p>
+                <p class="col-sm"><strong>NTA:&nbsp;</strong> {{ratios.nTA}}</p>
             </div>
-        </div>
-        {% endif %}
-        <!-- Create a row and two cols -->
-        <div class="row">
-            <div class="col">
-                <p>{{d.director_name}}</p>
+            <div class="row">
+                <p class="col-sm"><strong>DPS:&nbsp;</strong> {{ratios.net_DPS}}</p>
+                <p class="col-sm"><strong>Beta:&nbsp;</strong> {{ratios.beta_Value}}</p>
             </div>
-
-            <div class="col">
-                <p>{{d.director_role}}</p>
+            <div class="row">
+                <p class="col-sm"><strong>Price NTA:&nbsp;</strong> {{ratios.price_NTA}}</p>
+                <p class="col-sm"><strong>Net Yield:&nbsp;</strong> {{ratios.net_Yield}}</p>
             </div>
-        </div>
-        {%endfor%}
-    </section>
-
+            <div class="row">
+                <p class="col-sm"><strong>Sharpe:&nbsp;</strong> {{ratios.sharpe}}</p>
+                <p class="col-sm"><strong>Debt Equity:&nbsp;</strong> {{ratios.debt_Equity}}</p>
+            </div>
+    
+        </section>
+    
+        <!-- Company Profile -->
+        <section class="company-profile container-fluid">
+            <h1 style="text-align: center">Company Profile</h1>
+            <div class="row">
+                    <h2>Overview</h2>
+                    <p>{{profile.overview}}</p>
+            </div>
+            <div class="row">
+                    <h2>performance</h2>
+                    <p>{{profile.performance}}</p>
+            </div>
+            <div class="row">
+                    <h2>Outlook</h2>
+                    <p>{{profile.outlook}}</p>
+            </div>
+            <div class="row">
+                    <h2>Description</h2>
+                    <p>{{profile.description}}</p>
+            </div>
+            
+        </section>
+    
+        <!-- TODO: Income statement Section -->
+        <section class="income container-fluid">
+            <div class="row">
+    
+            </div>
+        </section>
+    
+        <!-- TODO: Assets & Liabilities Section -->
+    
+        <!-- Directors section -->
+        <section class="directors container-fluid">
+            <h1 style="text-align: center">Directors</h1>
+            <!-- Loop through directors queryse. Create a row and two columns for each director to ensure structure is tidy -->
+            {%for d in directors%}
+            <!-- Set name and role labels during the first loop iteration -->
+            {%if forloop.first%}
+            <!-- Column labels  -->
+            <div class="row">
+                <div class="col">
+                    <h3>Name</h3>
+                </div>
+                <div class="col">
+                    <h3>Role</h3>
+                </div>
+            </div>
+            {% endif %}
+            <!-- Create a row and two cols -->
+            <div class="row">
+                <div class="col">
+                    <p>{{d.director_name}}</p>
+                </div>
+    
+                <div class="col">
+                    <p>{{d.director_role}}</p>
+                </div>
+            </div>
+            {%endfor%}
+        </section>
+    </main>
 
     <!-- Footer Sections -->
     <footer>
@@ -149,10 +150,26 @@
         </div>
     </footer>
 
-
+    <canvas id="myChart" width="400" height="400"></canvas>
     <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Initialise price set globally-->
+    <script>
+        var priceSet = [];
+        var labels = [];
+        {%for el in priceSet%}
+        priceSet.push({{el.price}});
+        labels.push({{el.date}});
+        {%endfor%}
+        priceSet = priceSet.slice(-10);
+        labels = labels.slice(-10);
+    </script>
+    <script src="{% static 'summary/main.js'%}"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.js"
+    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+    crossorigin="anonymous"></script>
 </body>
 </html>

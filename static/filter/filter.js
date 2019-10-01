@@ -13,7 +13,6 @@ $('document').ready(function() {
         console.log(risk,index,blacklist);
         // pseudo loading for client immersion, using settimeout
         setTimeout(function() {
-            // TODO: Change from redirecting 
             window.location = '/table';
         }, 3000);
     });

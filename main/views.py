@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.template import loader
 from django.http import HttpResponse, Http404
-from django.core.serializers.json import DjangoJSONEncoder
 from django.forms.models import model_to_dict
 from django.views.decorators.csrf import ensure_csrf_cookie
 from subprocess import Popen, PIPE, STDOUT
@@ -35,7 +34,8 @@ def summary(request, ticker):
     directors = company.directors_set.filter
     profile = company.companyprofile_set.latest('ticker_date')
     summary = company.summary_set.latest('ticker_date')
-    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios, 'summary': summary})
+    priceSet = list(company.price_set.all()[:10])
+    return render(request, 'main/summary.html', {'company': company, 'price': price, 'profile': profile, 'directors': directors, 'ratios': ratios, 'summary': summary, 'priceSet': priceSet})
 
 # Filtered table page
 def table(request):
